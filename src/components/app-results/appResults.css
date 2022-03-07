@@ -1,0 +1,27 @@
+.result-rows {
+  text-align: left;
+  margin: 20px 0;
+}
+
+.result-row {
+  margin-bottom: 20px;
+}
+
+.result-row h5 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.result-row p {
+  margin-bottom: 10px;
+  color: #2e7d32;
+}
+
+.result-row p.error {
+  color: #d32f2f;
+  font-weight: 500;
+}
+
+.result-score {
+  font-size: 20px;
+}
