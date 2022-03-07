@@ -4,8 +4,8 @@ import Button from "@mui/material/Button";
 
 import "./appForm.css";
 import { Quiz, QuizFormValues } from "../../appModels";
-import { TextInput } from "../TextInput.tsx/TextInput";
-import { SelectInput } from "../SelectInput.tsx/SelectInput";
+import { TextInput } from "../text-input/TextInput";
+import { SelectInput } from "../select-input/SelectInput";
 
 interface AppFormProps {
   formik: FormikProps<QuizFormValues>;
