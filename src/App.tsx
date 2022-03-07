@@ -1,5 +1,6 @@
 import React, { useEffect, useMemo, useState } from "react";
 import { FormikErrors, useFormik } from "formik";
+import fetch from "cross-fetch";
 
 import "./assets/stylesheets/app.css";
 import { Quiz, QuizFormValues, QuizResult } from "./appModels";
@@ -85,7 +86,7 @@ const App = (): JSX.Element => {
   }, []);
 
   const getQuizzes = () => {
-    fetch("./quizzes.json", {
+    fetch(`${process.env.REACT_APP_QUIZZES_JSON_LOCATION}`, {
       headers: {
         "Content-Type": "application/json",
         Accept: "application/json",
